@@ -1,0 +1,9 @@
+<div class="card">
+  <p><strong>Nome:</strong> {{ nome }}</p>
+  <p><strong>Classe:</strong> {{ classe }}</p>
+   <button (click)="toggleMedia()">
+    {{ mostraMedia ? 'Nascondi media voti' : 'Mostra media voti' }}
+  </button>
+
+  <p *ngIf="mostraMedia"><strong>Media voti:</strong> {{ mediaVoti }}</p>
+</div>
